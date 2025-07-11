@@ -4,6 +4,7 @@
   "description": "Backend API for Invoice Generator with MongoDB and PDF generation",
   "main": "dist/server.js",
   "scripts": {
+    "prepare": "npm install",
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
     "build": "tsc",
