@@ -23,7 +23,8 @@ export const generatePdf = asyncHandler(async (req, res) => {
     await page.setContent(htmlContent, { waitUntil: "networkidle0" });
 
     // Generate PDF
-    const pdfPath = path.join(__dirname, "invoice.pdf");
+    // const pdfPath = path.join(__dirname, "invoice.pdf");
+    const pdfPath = path.join("/tmp", invoice-${Date.now()}.pdf);
     await page.pdf({
       path: pdfPath,
       format: "A4",
