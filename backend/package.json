@@ -7,7 +7,7 @@
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
     "build": "tsc",
-    "postinstall":"puppeteer install",
+    "postinstall": "puppeteer install",
     "test": "jest",
     "lint": "eslint \"src//*.ts\"",
     "lint:fix": "eslint \"src//*.ts\" --fix"
@@ -36,7 +36,7 @@
     "mongoose": "^8.0.3",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
-    "puppeteer": "^21.6.1"
+    "puppeteer": "^21.11.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
