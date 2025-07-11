@@ -2,13 +2,13 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Signup from "./components/SignUp";
 import Login from "./components/Login";
 import Products from "./components/Product";
-import { useContext, ReactNode } from "react";
+import { useContext } from "react";
 import UserContext from "./context/UserContext";
 import HomePage from "./components/HomePage";
 import PdfPage from "./components/PdfPage";
 
 const App = () => {
-  function ProtectedRoute({ children }: { children: ReactNode }) {
+  function ProtectedRoute({ children }: { children: React.ReactNode }) {
     const { login } = useContext(UserContext);
     const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
     if (!login && !isLoggedIn) {
