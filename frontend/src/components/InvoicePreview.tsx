@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Product {
   name: string;
   quantity: number;
