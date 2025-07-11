@@ -35,7 +35,7 @@ const Login: React.FC = () => {
       if (res.data.success) {
         toast.success("Login successful");
         localStorage.setItem("user", JSON.stringify(res.data));
-        setTimeout(() => navigate("/products"), 100);
+        setTimeout(() => navigate("/products"), 1000);
       } else {
         toast.error("Invalid credentials");
       }
