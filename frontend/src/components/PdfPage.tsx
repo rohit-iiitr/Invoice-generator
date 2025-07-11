@@ -77,7 +77,7 @@ export default function PdfPage() {
 
       try {
         const response = await fetch(
-         ` ${BACKEND_URL}/api/products/generate-pdf`,
+         `${BACKEND_URL}/api/products/generate-pdf`,
           {
             method: "POST",
             headers: {
