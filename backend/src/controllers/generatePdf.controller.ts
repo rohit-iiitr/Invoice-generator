@@ -25,6 +25,8 @@ export const generatePdf = asyncHandler(async (req, res) => {
     // Generate PDF
     // const pdfPath = path.join(__dirname, "invoice.pdf");
     const pdfPath = path.join("/tmp", "invoice.pdf");
+    console.log("imgData length:", imgData?.length);
+console.log("Generating PDF at:", pdfPath);
     await page.pdf({
       path: pdfPath,
       format: "A4",
