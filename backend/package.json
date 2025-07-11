@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
-    "build": "npm install && npm install -g puppeteer --unsafe-perm=true && puppeteer browsers install chromium && npm run build && tsc",
+    "build": "npm install && npm install -g puppeteer --unsafe-perm=true && puppeteer browsers install chrome && npm run build && tsc",
     "test": "jest",
     "lint": "eslint \"src//*.ts\"",
     "lint:fix": "eslint \"src//*.ts\" --fix"
