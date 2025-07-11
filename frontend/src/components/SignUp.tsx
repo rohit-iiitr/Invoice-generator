@@ -50,7 +50,7 @@ const Signup = () => {
   };
 
   return (
-    <div className ="fixed inset-0 h-screen w-screen bg-black overflow-hidden" >
+    <div className ="h-screen w-screen bg-black overflow-hidden" >
       
       <Navbar
         navButton={
