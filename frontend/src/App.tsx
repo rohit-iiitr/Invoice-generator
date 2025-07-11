@@ -6,9 +6,9 @@ import { useContext } from "react";
 import UserContext from "./context/UserContext";
 import HomePage from "./components/HomePage";
 import PdfPage from "./components/PdfPage";
-
+import type {ReactNode} from 'react';
 const App = () => {
-  function ProtectedRoute({ children }: { children: React.ReactNode }) {
+  function ProtectedRoute({ children }: { children: ReactNode }) {
     const { login } = useContext(UserContext);
     const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
     if (!login && !isLoggedIn) {
