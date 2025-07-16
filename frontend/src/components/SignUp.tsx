@@ -118,7 +118,7 @@ const Signup = () => {
                 required
               />
               <p className="text-xs text-gray-500 mt-1">
-                Any further updates will be forwarded on this Email ID
+                Your password needs 6+ characters 
               </p>
             </div>
 
